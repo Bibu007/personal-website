@@ -28,7 +28,6 @@
   grid-column-end: 3;
   grid-row-start: 4;
   grid-row-end: 5;
-  background-color: aquamarine;
   min-width: 0;
 }
 
@@ -186,7 +185,6 @@
   opacity: 0;
   transform: translateY(25px);
   filter: blur(8px);
-
   animation: textReveal 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
@@ -202,4 +200,183 @@
     transform: translateY(0);
     filter: blur(0);
   }
+}
+
+.javascript.mobile {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.html.mobile {
+  grid-column-start: 6;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.css.mobile {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.react.mobile {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.qa.mobile {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+
+.typescript.mobile {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 10;
+  grid-row-end: 11;
+}
+
+.express.mobile {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 11;
+  grid-row-end: 12;
+}
+
+.nodejs.mobile {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.sql.mobile {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.python.mobile {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.unix.mobile {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 9;
+  grid-row-end: 10;
+}
+
+.nextjs.mobile {
+  grid-column-start: 6;
+  grid-column-end: 8;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.tailwind.mobile {
+  grid-column-start: 6;
+  grid-column-end: 8;
+  grid-row-start: 11;
+  grid-row-end: 12;
+}
+
+.ai.mobile {
+  grid-column-start: 6;
+  grid-column-end: 8;
+  grid-row-start: 10;
+  grid-row-end: 11;
+}
+
+.vite.mobile {
+  grid-column-start: 6;
+  grid-column-end: 8;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+
+.webpack.mobile {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.fullstack.mobile {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 8;
+  grid-row-end: 9;
+}
+
+.redux.mobile {
+  grid-column-start: 6;
+  grid-column-end: 8;
+  grid-row-start: 8;
+  grid-row-end: 9;
+}
+
+.postgresql.mobile {
+  grid-column-start: 5;
+  grid-column-end: 8;
+  grid-row-start: 9;
+  grid-row-end: 10;
+}
+
+.docker.mobile {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.mongodb.mobile {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 7;
+  grid-row-end: 8;
+}
+
+.redis.mobile {
+  grid-column-start: 7;
+  grid-column-end: 8;
+  grid-row-start: 7;
+  grid-row-end: 8;
+}
+
+.layer1.mobile {
+  display: flex;
+  object-fit: contain;
+  font-size: clamp(0.5rem, 3.7vw, 2rem);
+  font-family: "Courier New", monospace;
+  font-weight: 700;
+  place-content: center;
+}
+
+.layer2.mobile {
+  display: flex;
+  font-size: clamp(0.5rem, 3.3vw, 1.75rem);
+  font-family: "Courier New", monospace;
+  font-weight: 700;
+  place-content: center;
+}
+
+.layer3.mobile {
+  display: flex;
+  font-size: clamp(0.2rem, 2.8vw, 1.5rem);
+  font-family: "Courier New", monospace;
+  font-weight: 700;
+  place-content: center;
 }

@@ -1,133 +1,200 @@
 import styles from "./Portfolio.module.css";
 import ScrambleText from "./ScrambleText";
 import face from "./images/face.jpg";
+import { useState, useEffect } from "react";
+
+function useWindowSize() {
+  // Initialize state with undefined so server and client renders match
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+    height: undefined,
+  });
+
+  useEffect(() => {
+    // Handler to call on window resize
+    function handleResize() {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    }
+
+    // Add event listener
+    window.addEventListener("resize", handleResize);
+
+    // Call handler right away so state gets updated with initial window size
+    handleResize();
+
+    // Remove event listener on cleanup
+    return () => window.removeEventListener("resize", handleResize);
+  }, []); // Empty array ensures that effect is only run on mount
+
+  return windowSize;
+}
 
 function Portfolio() {
+  const { width } = useWindowSize();
+
   return (
     <div className={styles.portfolioContainer}>
       <div className={styles.grid}>
-        <img src={face} className={`${styles.face} ${styles.gridItem}`} />
+        <img
+          src={face}
+          className={`${styles.face} ${styles.gridItem} ${width < 601 ? "mobile" : ""}`}
+        />
         <ScrambleText
           layer="layer1"
           pos="javascript"
           text="Javascript"
-          className={styles.gridItem}
+          mobile={width < 601 ? true : false}
+          className={`${styles.gridItem}`}
         />
         <ScrambleText
           layer="layer1"
           pos="html"
           text="<HTML5>"
+          mobile={width < 601 ? true : false}
           className={`${styles.gridItem}`}
         />
         <ScrambleText
           layer="layer1"
           pos="css"
           text="CSS"
+          mobile={width < 601 ? true : false}
           className={`${styles.gridItem}`}
         />
-        <ScrambleText layer="layer1" pos="react" text="React" />
+        <ScrambleText
+          layer="layer1"
+          pos="react"
+          text="React"
+          mobile={width < 601 ? true : false}
+          className={`${styles.gridItem}`}
+        />
         <ScrambleText
           layer="layer1"
           pos="typescript"
           text="Typescript"
+          mobile={width < 601 ? true : false}
           className={`${styles.gridItem}`}
         />
         <ScrambleText
           layer="layer2"
           pos="express"
           text="Express"
+          mobile={width < 601 ? true : false}
           className={`${styles.gridItem}`}
         />
         <ScrambleText
           layer="layer2"
           pos="nodejs"
           text="NodeJS"
+          mobile={width < 601 ? true : false}
           className={`${styles.gridItem}`}
         />
         <ScrambleText
           layer="layer3"
           pos="qa"
           text="Quality Analysis"
+          mobile={width < 601 ? true : false}
           className={`${styles.gridItem}`}
         />
         <ScrambleText
           layer="layer2"
           pos="sql"
           text="SQL"
+          mobile={width < 601 ? true : false}
           className={`${styles.gridItem}`}
         />
         <ScrambleText
           layer="layer1"
           pos="python"
           text="Python"
+          mobile={width < 601 ? true : false}
           className={`${styles.gridItem}`}
         />
         <ScrambleText
           layer="layer3"
           pos="unix"
           text="UNIX"
+          mobile={width < 601 ? true : false}
           className={`${styles.gridItem}`}
         />
-        <ScrambleText layer="layer1" pos="nextjs" text="NextJS" />
+        <ScrambleText
+          layer="layer1"
+          pos="nextjs"
+          text="NextJS"
+          mobile={width < 601 ? true : false}
+          className={`${styles.gridItem}`}
+        />
         <ScrambleText
           layer="layer3"
           pos="tailwind"
           text="TailwindCSS"
+          mobile={width < 601 ? true : false}
           className={`${styles.gridItem}`}
         />
         <ScrambleText
           layer="layer2"
           pos="ai"
           text="AI Engineering"
-          className={`${styles.gridItem}`}
+          mobile={width < 601 ? true : false}
+          className={`${styles.gridItem} `}
         />
         <ScrambleText
           layer="layer2"
           pos="vite"
           text="Vite"
-          className={`${styles.gridItem}`}
+          mobile={width < 601 ? true : false}
+          className={`${styles.gridItem} `}
         />
         <ScrambleText
           layer="layer2"
           pos="webpack"
           text="Webpack"
-          className={`${styles.gridItem}`}
+          mobile={width < 601 ? true : false}
+          className={`${styles.gridItem} `}
         />
         <ScrambleText
           layer="layer3"
           pos="fullstack"
           text="Full-stack development"
-          className={`${styles.gridItem}`}
+          mobile={width < 601 ? true : false}
+          className={`${styles.gridItem} `}
         />
         <ScrambleText
           layer="layer2"
           pos="redux"
           text="Redux"
-          className={`${styles.gridItem}`}
+          mobile={width < 601 ? true : false}
+          className={`${styles.gridItem} `}
         />
         <ScrambleText
           layer="layer2"
           pos="postgresql"
           text="PostgreSQL"
-          className={`${styles.gridItem}`}
+          mobile={width < 601 ? true : false}
+          className={`${styles.gridItem} `}
         />
         <ScrambleText
           layer="layer1"
           pos="docker"
           text="Docker"
-          className={`${styles.gridItem}`}
+          mobile={width < 601 ? true : false}
+          className={`${styles.gridItem} `}
         />
         <ScrambleText
           layer="layer2"
           pos="mongodb"
           text="MongoDB"
-          className={`${styles.gridItem}`}
+          mobile={width < 601 ? true : false}
+          className={`${styles.gridItem} `}
         />
         <ScrambleText
           layer="layer1"
           pos="redis"
           text="Redis"
-          className={`${styles.gridItem}`}
+          mobile={width < 601 ? true : false}
+          className={`${styles.gridItem} `}
         />
       </div>
     </div>

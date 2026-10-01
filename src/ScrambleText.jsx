@@ -3,7 +3,7 @@ import "./ScrambleText.css";
 
 const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*";
 
-function ScrambleText({ text, layer, pos }) {
+function ScrambleText({ text, layer, pos, mobile }) {
   const [displayText, setDisplayText] = useState(text);
 
   useEffect(() => {
@@ -34,7 +34,11 @@ function ScrambleText({ text, layer, pos }) {
     return () => clearInterval(interval);
   }, [text]);
 
-  return <span className={`${layer} ${pos} gridItem`}>{displayText}</span>;
+  return (
+    <span className={`${layer} ${pos} ${mobile ? "mobile" : ""} gridItem`}>
+      {displayText}
+    </span>
+  );
 }
 
 export default ScrambleText;
