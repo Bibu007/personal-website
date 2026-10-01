@@ -3,6 +3,22 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem 6rem;
+  background-color: black;
+  opacity: 0;
+  transform: translateY(-40px);
+  animation: headerReveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes headerReveal {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .nav {
@@ -16,13 +32,14 @@
   border: none;
   font-size: 2rem;
   cursor: pointer;
+  color: white;
 }
 
 a {
   text-decoration: none;
   font-weight: 700;
   font-size: 1.25rem;
-  color: black;
+  color: white;
 }
 
 .logo {
@@ -43,15 +60,16 @@ a {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 70px;
+    top: 50px;
     right: 0;
     width: 200px;
     padding: 1rem;
     gap: 1rem;
-    background: white;
+    background: black;
+    color: white;
   }
   .header {
-    padding: 0px;
+    padding: 10px;
     margin: 0px 0px;
   }
 

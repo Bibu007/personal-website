@@ -1,0 +1,127 @@
+.portfolioContainer {
+  display: flex;
+  place-content: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 8.33vw);
+  grid-template-rows: repeat(10, 4.16vw);
+  justify-self: center;
+  /*margin: 10px 96px;*/
+  margin: auto;
+  /*background-color: #f4f4f6;*/
+}
+
+.grid div {
+  object-fit: contain;
+}
+
+.face {
+  grid-column-start: 4;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  grid-row-end: 10;
+  z-index: -1;
+}
+
+.layer1 {
+  display: flex;
+  font-size: 2rem;
+  font-family: "Courier New", monospace;
+  font-weight: 700;
+  place-content: center;
+}
+
+.layer2 {
+  display: flex;
+  font-size: 1.5rem;
+  font-family: "Courier New", monospace;
+  font-weight: 600;
+  place-content: center;
+}
+
+.layer3 {
+  display: flex;
+  font-size: 1rem;
+  font-family: "Courier New", monospace;
+  font-weight: 600;
+  place-content: center;
+}
+
+.javascript {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.html {
+  grid-column-start: 8;
+  grid-column-end: 11;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+
+.css {
+  grid-column-start: 9;
+  grid-column-end: 11;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.react {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 10;
+  grid-row-end: 11;
+}
+
+.gridItem {
+  min-width: 0;
+  color: aquamarine;
+}
+
+@keyframes textReveal {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+    filter: blur(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(10, 8.33vw);
+    grid-template-rows: repeat(10, 5vw);
+
+    /*margin: 10px 96px;*/
+  }
+}
+
+@media (max-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(10, 8.33vw);
+    grid-template-rows: repeat(10, 4.16vw);
+    margin-top: 10px;
+
+    /*margin: 10px 96px;*/
+  }
+}
+
+@media (min-width: 1500px) {
+  .grid {
+    max-width: 1200px;
+    margin: auto;
+    grid-template-columns: repeat(10, 120px);
+    grid-template-rows: repeat(10, 60px);
+  }
+}
