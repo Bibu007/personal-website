@@ -26,12 +26,12 @@ function ScrollText({ children }) {
   }, []);
 
   return (
-    <h2
+    <div
       ref={textRef}
       className={`${styles.text} ${isVisible ? styles.visible : ""}`}
     >
       {children}
-    </h2>
+    </div>
   );
 }
 

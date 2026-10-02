@@ -6,55 +6,79 @@ function Work() {
   return (
     <div className={styles.workContainer}>
       <ScrollText>
-        <h1 className={styles.title}>MY WORK</h1>
+        <div className={styles.title}>MY WORK</div>
         <div className={styles.workGrid}>
-          <div className={`${styles.battleship} ${styles.gridItem}`}>
+          <a
+            href="https://bibu007.github.io/battleship/"
+            target="_blank"
+            className={`${styles.battleship} ${styles.gridItem}`}
+          >
             <Tile
               image="battleship"
               title="Battleship"
               text="Online version of the battleship game built using vanilla JS"
             />
-          </div>
+          </a>
 
-          <div className={`${styles.wowmart} ${styles.gridItem}`}>
+          <a
+            href="https://shopping-cart-beta-tawny-82.vercel.app/"
+            target="_blank"
+            className={`${styles.wowmart} ${styles.gridItem}`}
+          >
             <Tile
               image="wowmart"
               title="Wowmart"
               text="Wowmart is an online store built using react"
             />
-          </div>
+          </a>
 
-          <div className={`${styles.weatherapp} ${styles.gridItem}`}>
+          <a
+            href="https://bibu007.github.io/weather-app/"
+            target="_blank"
+            className={`${styles.weatherapp} ${styles.gridItem}`}
+          >
             <Tile
               image="weatherapp"
               title="Weather App"
               text="Weather app delivers real-time weather data for any place on earth built using vanilla JS"
             />
-          </div>
+          </a>
 
-          <div className={`${styles.todo} ${styles.gridItem}`}>
+          <a
+            href="https://bibu007.github.io/to-do-list/"
+            target="_blank"
+            className={`${styles.todo} ${styles.gridItem}`}
+          >
             <Tile
               image="todo"
               title="To do list"
               text="To do list app to organize your worday built using vanilla JS"
             />
-          </div>
+          </a>
 
-          <div className={`${styles.memorycard} ${styles.gridItem}`}>
+          <a
+            href="https://memory-card-xi-ten.vercel.app/"
+            target="_blank"
+            className={`${styles.memorycard} ${styles.gridItem}`}
+          >
             <Tile
               image="memorycard"
               title="Memory card"
               text="A fun game to test your memory built using react"
             />
-          </div>
+          </a>
 
-          <div className={`${styles.tictactoe} ${styles.gridItem}`}>
+          <a
+            href="https://bibu007.github.io/tic-tac-toe/"
+            target="_blank"
+            className={`${styles.tictactoe} ${styles.gridItem}`}
+          >
             <Tile
               image="tictactoe"
-              title="Tic tac toe"
+              title="Tic Tac Toe"
               text="An online tic tac toe built using vanilla JS"
             />
-          </div>
+          </a>
         </div>
       </ScrollText>
     </div>

@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   background-color: #fafafa;
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
 .workGrid {
@@ -58,6 +58,7 @@
   font-family: "Frank Ruhl Libre";
   color: #4a4a4a;
   font-size: clamp(1.5rem, 3.2vw, 3rem);
+  font-weight: 900;
 }
 
 @media (max-width: 1200px) {

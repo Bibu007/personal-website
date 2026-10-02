@@ -8,6 +8,12 @@
   padding: 10px 5px 0px 5px;
 }
 
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
 .tileContainer {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   border-radius: 20px;
@@ -41,8 +47,12 @@
     font-size: 1.2rem;
   }
 
+  .button {
+    height: 1.2rem;
+  }
+
   .text {
-    font-size: 0.9rem;
+    font-size: 0.1rem;
   }
 }
 
@@ -51,7 +61,16 @@
     font-size: 1.3rem;
   }
 
-  .text {
-    font-size: 1rem;
+  .button {
+    height: 1.3rem;
   }
+
+  .text {
+    font-size: 0.9rem;
+  }
+}
+
+.button {
+  height: 1.5rem;
+  display: inline;
 }

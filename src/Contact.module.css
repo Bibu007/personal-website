@@ -1,0 +1,89 @@
+.contactContainer {
+  background-color: black;
+}
+
+.contactGrid {
+  display: grid;
+  color: white;
+  padding: 120px 200px 200px 200px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.message,
+.location,
+.email {
+  padding: 20px 10px;
+}
+
+.title {
+  padding: 0px 10px 20px 10px;
+}
+
+.icon {
+  font-size: 3rem;
+  padding: 10px;
+}
+
+.title {
+  font-family: "Frank Ruhl Libre";
+  font-size: clamp(1.5rem, 3.2vw, 3rem);
+  font-weight: 900;
+}
+
+.buttonContainer {
+  padding: 10px;
+}
+
+.photo {
+  height: 400px;
+  display: inline;
+}
+
+.emailIcon {
+  height: 1rem;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 1200px) {
+  .contactGrid {
+    padding: 120px 50px 120px 50px;
+  }
+
+  .photo {
+    height: 200px;
+  }
+
+  .icon {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .contactGrid {
+    padding: 80px 10px 80px 10px;
+    place-content: center;
+  }
+
+  .photo {
+    height: 200px;
+    margin-top: 30px;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+  }
+
+  .message,
+  .location,
+  .email {
+    font-size: 0.8rem;
+  }
+}

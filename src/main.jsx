@@ -6,6 +6,7 @@ import Header from "./Header.jsx";
 import Portfolio from "./Portfolio.jsx";
 import About from "./About.jsx";
 import Work from "./Work.jsx";
+import Contact from "./Contact.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -13,5 +14,6 @@ createRoot(document.getElementById("root")).render(
     <Portfolio />
     <About />
     <Work />
+    <Contact />
   </StrictMode>,
 );
