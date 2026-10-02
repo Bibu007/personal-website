@@ -1,7 +1,7 @@
 import styles from "./Portfolio.module.css";
 import ScrambleText from "./ScrambleText";
 import ScrollArrow from "./ScrollArrow.jsx";
-import ScrollText from "./ScrollText.jsx";
+//import ScrollText from "./ScrollText.jsx";
 import face from "./images/face.jpg";
 //import { useState, useEffect } from "react";
 import useWindowSize from "./useWindowFile.jsx";
@@ -191,7 +191,7 @@ function Portfolio() {
           mobile={width < 601 ? true : false}
           className={`${styles.gridItem}`}
         />
-        {width < 601 ? <ScrollArrow /> : ""}
+        {width < 1200 ? <ScrollArrow /> : ""}
       </div>
     </div>
   );

@@ -1,16 +1,17 @@
 .aboutContainer {
-  background-color: black;
+  display: flex;
+  justify-content: center;
 }
 
 .about {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(3, auto);
-  margin: 48px;
   color: white;
   font-size: 3.5vw;
   font-weight: 800;
   padding: 120px 32px 200px 32px;
+  background-color: black;
 }
 
 .aboutItem {
@@ -22,12 +23,13 @@
 
 .title {
   font-family: "Frank Ruhl Libre";
-  grid-column: 4/6;
+  grid-column: 3/5;
   grid-row: 1/2;
+  font-size: clamp(1.5rem, 3.2vw, 3rem);
 }
 
 .arrow {
-  grid-column: 5/6;
+  grid-column: 4/5;
   grid-row: 2/3;
 }
 
@@ -36,7 +38,7 @@
 }
 
 .text {
-  grid-column: 6/12;
+  grid-column: 5/11;
   grid-row: 3/4;
   font-size: 1rem;
 }
@@ -84,5 +86,11 @@
     grid-column: 3/6;
     grid-row: 3/4;
     font-size: clamp(0.8rem, 1.5vw, 1rem);
+  }
+}
+
+@media (min-width: 1500px) {
+  .about {
+    max-width: 1500px;
   }
 }

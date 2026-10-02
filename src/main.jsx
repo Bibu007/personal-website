@@ -5,11 +5,13 @@ import "./index.css";
 import Header from "./Header.jsx";
 import Portfolio from "./Portfolio.jsx";
 import About from "./About.jsx";
+import Work from "./Work.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Header />
     <Portfolio />
     <About />
+    <Work />
   </StrictMode>,
 );

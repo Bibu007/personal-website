@@ -1,0 +1,57 @@
+.tileImage {
+  border-radius: 20px;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 10px 5px 0px 5px;
+}
+
+.tileContainer {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  padding: 20px;
+  background-color: white;
+  color: #4a4a4a;
+  position: relative;
+  transition:
+    box-shadow 500ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 500ms cubic-bezier(0.22, 1, 0.36, 1);
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.tileContainer:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 8px 15px rgba(0, 0, 0, 0.08),
+    0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.text {
+  font-weight: 400;
+  padding: 0px 5px 0px 5px;
+  font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+}
