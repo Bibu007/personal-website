@@ -31,30 +31,6 @@
   animation: textReveal 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
-.layer1 {
-  display: flex;
-  font-size: 2rem;
-  font-family: "Courier New", monospace;
-  font-weight: 700;
-  place-content: center;
-}
-
-.layer2 {
-  display: flex;
-  font-size: 1.5rem;
-  font-family: "Courier New", monospace;
-  font-weight: 600;
-  place-content: center;
-}
-
-.layer3 {
-  display: flex;
-  font-size: 1rem;
-  font-family: "Courier New", monospace;
-  font-weight: 600;
-  place-content: center;
-}
-
 .javascript {
   grid-column-start: 1;
   grid-column-end: 3;

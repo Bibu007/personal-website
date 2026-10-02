@@ -1,0 +1,15 @@
+.text {
+  opacity: 0;
+  transform: translateY(40px);
+  filter: blur(8px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease,
+    filter 0.8s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
