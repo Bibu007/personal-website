@@ -1,0 +1,48 @@
+.scrollArrow {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  color: black;
+
+  width: 40px;
+  height: 50px;
+
+  transform: translateX(-50%);
+
+  display: flex;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.scrollArrow span {
+  width: 18px;
+  height: 18px;
+
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+
+  transform: rotate(45deg);
+
+  animation: scrollDown 1.8s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+}
+
+@keyframes scrollDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-8px) rotate(45deg);
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(14px) rotate(45deg);
+  }
+}
