@@ -1,8 +1,8 @@
 import styles from "./Tile.module.css";
 import battleship from "./images/battleship.png";
 import weatherapp from "./images/weatherapp.png";
-import memorycard from "./images/memorycard.png";
-import wowmart from "./images/wowmart.png";
+import memorycard from "./images/memorycard.webp";
+import wowmart from "./images/wowmart.webp";
 import tictactoe from "./images/tictactoe.png";
 import todo from "./images/todo.png";
 
