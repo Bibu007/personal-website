@@ -2,7 +2,7 @@ import styles from "./Portfolio.module.css";
 import ScrambleText from "./ScrambleText";
 import ScrollArrow from "./ScrollArrow.jsx";
 //import ScrollText from "./ScrollText.jsx";
-import face from "./images/face.jpg";
+import face from "./images/face.webp";
 //import { useState, useEffect } from "react";
 import useWindowSize from "./useWindowFile.jsx";
 
