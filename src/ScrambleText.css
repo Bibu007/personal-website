@@ -188,6 +188,18 @@
   animation: textReveal 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
+.git {
+  display: none;
+}
+
+.java {
+  display: none;
+}
+
+.reactnative {
+  display: none;
+}
+
 @keyframes textReveal {
   from {
     opacity: 0;
@@ -231,10 +243,10 @@
 }
 
 .qa.mobile {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 6;
-  grid-row-end: 7;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 12;
+  grid-row-end: 13;
 }
 
 .typescript.mobile {
@@ -287,10 +299,10 @@
 }
 
 .tailwind.mobile {
-  grid-column-start: 6;
-  grid-column-end: 8;
-  grid-row-start: 11;
-  grid-row-end: 12;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 13;
+  grid-row-end: 14;
 }
 
 .ai.mobile {
@@ -315,10 +327,10 @@
 }
 
 .fullstack.mobile {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 8;
-  grid-row-end: 9;
+  grid-column-start: 5;
+  grid-column-end: 8;
+  grid-row-start: 12;
+  grid-row-end: 13;
 }
 
 .redux.mobile {
@@ -336,7 +348,7 @@
 }
 
 .docker.mobile {
-  grid-column-start: 2;
+  grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 4;
   grid-row-end: 5;
@@ -354,6 +366,27 @@
   grid-column-end: 8;
   grid-row-start: 7;
   grid-row-end: 8;
+}
+
+.git.mobile {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 8;
+  grid-row-end: 9;
+}
+
+.java.mobile {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 10;
+  grid-row-end: 11;
+}
+
+.reactnative.mobile {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 11;
+  grid-row-end: 12;
 }
 
 .layer1.mobile {

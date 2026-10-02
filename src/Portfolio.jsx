@@ -168,6 +168,27 @@ function Portfolio() {
           mobile={width < 601 ? true : false}
           className={`${styles.gridItem} `}
         />
+        <ScrambleText
+          layer="layer1"
+          pos="git"
+          text="git"
+          mobile={width < 601 ? true : false}
+          className={`${styles.gridItem}`}
+        />
+        <ScrambleText
+          layer="layer1"
+          pos="java"
+          text="java"
+          mobile={width < 400 ? true : false}
+          className={`${styles.gridItem}`}
+        />
+        <ScrambleText
+          layer="layer1"
+          pos="reactnative"
+          text="React Native"
+          mobile={width < 601 ? true : false}
+          className={`${styles.gridItem}`}
+        />
       </div>
     </div>
   );
