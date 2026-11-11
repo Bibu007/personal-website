@@ -4,6 +4,7 @@ import weatherapp from "./images/weatherapp.png";
 import memorycard from "./images/memorycard.webp";
 import wowmart from "./images/wowmart.webp";
 import tictactoe from "./images/tictactoe.png";
+import exclusiveclub from "./images/exclusiveclub.png";
 import todo from "./images/todo.png";
 
 function imageSelector(str) {
@@ -20,6 +21,8 @@ function imageSelector(str) {
       return tictactoe;
     case "todo":
       return todo;
+    case "exclusiveclub":
+      return exclusiveclub;
   }
 }
 

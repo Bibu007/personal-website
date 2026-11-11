@@ -21,6 +21,18 @@ function Work() {
           </a>
 
           <a
+            href="https://members-only-tklm.onrender.com/"
+            target="_blank"
+            className={`${styles.tictactoe} ${styles.gridItem}`}
+          >
+            <Tile
+              image="exclusiveclub"
+              title="The Exclusice Club"
+              text="A mini version of Reddit. Built using Express for the backend and passportjs for authentication"
+            />
+          </a>
+
+          <a
             href="https://shopping-cart-beta-tawny-82.vercel.app/"
             target="_blank"
             className={`${styles.wowmart} ${styles.gridItem}`}
@@ -65,18 +77,6 @@ function Work() {
               image="memorycard"
               title="Memory card"
               text="A fun game to test your memory built using react"
-            />
-          </a>
-
-          <a
-            href="https://bibu007.github.io/tic-tac-toe/"
-            target="_blank"
-            className={`${styles.tictactoe} ${styles.gridItem}`}
-          >
-            <Tile
-              image="tictactoe"
-              title="Tic Tac Toe"
-              text="An online tic tac toe built using vanilla JS"
             />
           </a>
         </div>
