@@ -27,7 +27,7 @@ function Work() {
           >
             <Tile
               image="exclusiveclub"
-              title="The Exclusice Club"
+              title="The Exclusive Club"
               text="A mini version of Reddit. Built using Express for the backend and passportjs for authentication"
             />
           </a>
